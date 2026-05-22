@@ -1,0 +1,75 @@
+/* ===== ESTILO GERAL ===== */
+body {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e3f2fd; /* Aquele azul clarinho */
+    padding: 40px 20px;
+    transition: background-color 0.5s ease;
+}
+
+/* ===== TÍTULO ===== */
+h1 {
+    color: #1565c0; 
+    margin-bottom: 30px;
+}
+
+/* ===== RESULTADO/DISPLAY===== */
+#display {
+    font-weight: bold;
+    margin-bottom: 35px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* ===== BOTÕES GENERÍCOS ===== */
+button {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 25px; /* Ajustado levemente */
+    font-size: 16px;
+    background-color: #3498db; 
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+/* ===== BOTÃO NOTURNO FLUTUANTE ===== */
+#btn-noturno {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 0;
+    font-size: 20px;
+    z-index: 1000;
+}
+body.dark-mode {
+    background-color: #121214;
+    color: #e1e1e6;
+}
+
+body.dark-mode h1 {
+    color: #ffffff;
+}
+
+body.dark-mode button {
+    background-color: #202024;
+    color: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode button:hover {
+    background-color: #29292e;
+}
+body.dark-mode #display[style*="color: rgb(21, 101, 192)"], 
+body.dark-mode #display {
+    transition: color 0.3s ease;
+}
