@@ -39,6 +39,10 @@ button:hover {
     transform: scale(1.05);
     filter: brightness(1.1);
 }
+button:active {
+    transform: scale(0.95);                     /* Dá uma leve encolhida no botão ao ser clicado */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);   /* Diminui a sombra para parecer que ele afundou */
+}
 /* ===== BOTÃO NOTURNO FLUTUANTE ===== */
 #btn-noturno {
     position: fixed;
