@@ -15,6 +15,7 @@ h1 {
 
 /* ===== RESULTADO/DISPLAY===== */
 #display {
+    font-size: 4rem; /* Deixa o número bem grandão e destacado no centro pro celular! */
     font-weight: bold;
     margin-bottom: 35px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
